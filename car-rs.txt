@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: car-rs
+  namespace: car
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      madeby: uct
+  template:
+    metadata:
+      name: car-pod
+      namespace: car
+      labels:
+        madeby: uct
+    spec:
+      containers:
+      - name: toyota
+        image: ngostal/car-brand-choice:v1.0.0
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP

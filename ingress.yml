@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+   name: k8s-jenkins-ingress
+   namespace: car
+spec:
+  rules:
+  - host: max.local
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: car-svc
+            port:
+              number: 8080
