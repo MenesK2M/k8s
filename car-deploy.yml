@@ -21,11 +21,11 @@ spec:
       labels:
         madeby: uct
       annotations:
-        kubernetes.io/change-cause: "Version 1.1.0"
+        kubernetes.io/change-cause: "Version 1.0.0"
     spec:
       containers:
       - name: toyota
-        image: menesk2m/car-brand-choice:v1.1.0
+        image: menesk2m/car-brand-choice:v1.0.0
         resources:
           requests:
             memory: "64Mi"
