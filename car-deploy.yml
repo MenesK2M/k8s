@@ -20,8 +20,6 @@ spec:
       namespace: car
       labels:
         madeby: uct
-      annotations:
-        kubernetes.io/change-cause: "Version 1.0.0"
     spec:
       containers:
       - name: toyota
