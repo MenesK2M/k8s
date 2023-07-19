@@ -26,6 +26,7 @@ spec:
         image: menesk2m/car-brand-choice:9b45f
 
 
+
         resources:
           requests:
             memory: "64Mi"
