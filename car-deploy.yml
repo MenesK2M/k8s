@@ -24,14 +24,6 @@ spec:
       containers:
       - name: toyota
         image: menesk2m/car-brand-choice:1995a
-
-
-
-
-
-
-
-
         resources:
           requests:
             memory: "64Mi"
