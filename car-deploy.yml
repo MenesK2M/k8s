@@ -25,6 +25,7 @@ spec:
       - name: toyota
         image: menesk2m/car-brand-choice:86c81
 
+
         resources:
           requests:
             memory: "64Mi"
