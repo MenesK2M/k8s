@@ -23,7 +23,8 @@ spec:
     spec:
       containers:
       - name: toyota
-        image: menesk2m/car-brand-choice:44cfc
+        image: menesk2m/car-brand-choice:2923a
+
 
 
 
